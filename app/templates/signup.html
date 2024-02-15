@@ -4,26 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>SignUp Form</title>
+
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body>
-    <form action="{{url_for('signup')}}" method="post">
-        <h1>Hello SignUp Form..</h1>
-        <label for="username">UserName</label>
-        <input type="text" id="username" name="username"><br><br>
+<body class="bg-light">
+    <div class="container mt-5">
+        <form action="{{ url_for('signup') }}" method="post">
+            <h1 class="mb-4">Hello SignUp Form</h1>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br><br>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email"><br><br>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
 
-        <label for="number">Mobile</label>
-        <input type="number" id="number" name="number"><br><br>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
 
-        <input type="submit" value="Submit">
-    </form>
+            <div class="form-group">
+                <label for="number">Mobile</label>
+                <input type="number" class="form-control" id="number" name="number" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <form action="{{ url_for('home') }}">
+            <button type="submit" class="btn btn-secondary mt-3">Home Page</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
