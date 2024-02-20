@@ -2,6 +2,7 @@ myenv/
 venv/
 __pycache__/
 flask_session/
+migrations/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

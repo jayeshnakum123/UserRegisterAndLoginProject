@@ -12,7 +12,7 @@
 
 <body class="bg-light">
     <div class="container mt-5">
-        <form action="{{ url_for('signup') }}" method="post">
+        <form action="{{ url_for('signup') }}" method="post" enctype="multipart/form-data">
             <h1 class="mb-4">Hello SignUp Form</h1>
 
             <div class="form-group">
@@ -33,6 +33,11 @@
             <div class="form-group">
                 <label for="number">Mobile</label>
                 <input type="number" class="form-control" id="number" name="number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Upload Profile</label><br>
+                <input type="file" name="profile_picture" accept=".png, .jpg, .jpeg"><br>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
