@@ -4,7 +4,10 @@ __pycache__/
 flask_session/
 migrations/
 app/__pycache__/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6181efa56c04c7b91ec5e149e56ad4bf7a8d20af
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

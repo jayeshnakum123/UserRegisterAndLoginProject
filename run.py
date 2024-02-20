@@ -4,6 +4,8 @@ import MySQLdb
 
 
 if __name__ == "__main__":
-
-    app.run(debug=True)
-    db.create_all()
+    with app.app_context():
+        # Creating table first !!
+        db.create_all()
+        # Running the flask app
+        app.run(debug=True)
