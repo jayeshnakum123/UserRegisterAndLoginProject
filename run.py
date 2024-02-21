@@ -1,5 +1,5 @@
 from app import app, db
-from app.models import Auth, user_signin
+from app.models import Auth, user_signin, User_queries
 import MySQLdb
 
 

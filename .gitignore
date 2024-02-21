@@ -4,6 +4,7 @@ __pycache__/
 flask_session/
 migrations/
 app/__pycache__/
+config.json/
 <<<<<<< HEAD
 
 =======

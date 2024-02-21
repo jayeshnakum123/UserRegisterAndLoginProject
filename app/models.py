@@ -29,6 +29,15 @@ class user_signin(db.Model, UserMixin):
         db.session.commit()
 
 
+class User_queries(db.Model):
+    __tablename__ = "user_queries"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    email = db.Column(db.String(50))
+    number = db.Column(db.String(50))
+    message = db.Column(db.String(255))
+
+
 class Auth(db.Model):
     __tablename__ = "Auth"
     # id = Column(Integer, primary_key=True)
